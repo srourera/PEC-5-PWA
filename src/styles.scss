@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.route {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+
+  h1.title {
+    margin-bottom: 40px;
+  }
+}
+.list {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}

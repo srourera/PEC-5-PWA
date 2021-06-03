@@ -1,0 +1,33 @@
+<div *ngIf="palette$ | async as palette" class="palette">
+  <h1 class="title">
+    <a [routerLink]="['']" routerLinkActive="router-link-active">
+      <img
+        src="../../../assets/icons/back-arrow.png"
+        alt="Back navigation"
+        height="40"
+      />
+    </a>
+    {{ palette.title }}
+  </h1>
+  <div class="palette__colors">
+    <div
+      *ngFor="let color of palette.colors"
+      class="palette__color"
+      [ngStyle]="{ background: '#' + color }"
+    >
+      <span class="palette__color--label">#{{ color }}</span>
+    </div>
+  </div>
+  <p class="palette__info">
+    <label>Created:</label><span>{{ palette.dateCreated | date }}</span>
+  </p>
+  <p class="palette__info">
+    <label>Seen:</label><span>{{ palette.numViews }} times</span>
+  </p>
+  <p class="palette__info">
+    <label>Saved as favourite:</label><span>{{ palette.numHearts }} times</span>
+  </p>
+  <p class="palette__info">
+    <label>Votes:</label><span>{{ palette.numVotes }}</span>
+  </p>
+</div>

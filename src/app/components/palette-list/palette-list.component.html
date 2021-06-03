@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="title">TOP Palettes</h1>
+  <ul class="list">
+    <a
+      *ngFor="let palette of palettes$ | async"
+      [routerLink]="[palette.id]"
+      class="palette"
+    >
+      <div class="palette__colors">
+        <div
+          *ngFor="let color of palette.colors"
+          class="palette__color"
+          [ngStyle]="{ background: '#' + color }"
+        ></div>
+      </div>
+      <p class="palette__title">{{ palette.title }}</p>
+    </a>
+  </ul>
+</div>
