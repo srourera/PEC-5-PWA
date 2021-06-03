@@ -1,0 +1,99 @@
+{
+  "configVersion": 1,
+  "timestamp": 1622748909067,
+  "index": "/PEC-5-PWA/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/PEC-5-PWA/favicon.ico",
+        "/PEC-5-PWA/index.html",
+        "/PEC-5-PWA/main.2b91afba0d9b8fb01069.js",
+        "/PEC-5-PWA/manifest.webmanifest",
+        "/PEC-5-PWA/polyfills.a4021de53358bb0fec14.js",
+        "/PEC-5-PWA/runtime.e227d1a0e31cbccbf8ec.js",
+        "/PEC-5-PWA/styles.1bc687f493119ceac132.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/PEC-5-PWA/assets/icons/back-arrow.png",
+        "/PEC-5-PWA/assets/icons/icon-128x128.png",
+        "/PEC-5-PWA/assets/icons/icon-144x144.png",
+        "/PEC-5-PWA/assets/icons/icon-152x152.png",
+        "/PEC-5-PWA/assets/icons/icon-192x192.png",
+        "/PEC-5-PWA/assets/icons/icon-384x384.png",
+        "/PEC-5-PWA/assets/icons/icon-512x512.png",
+        "/PEC-5-PWA/assets/icons/icon-72x72.png",
+        "/PEC-5-PWA/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "palettes-api",
+      "patterns": [
+        "https:\\/\\/www\\.colourlovers\\.com\\/api\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": 7200000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/PEC-5-PWA/assets/icons/back-arrow.png": "f0e48ab6d2543acb079fff93e91d7ec44e68a1f0",
+    "/PEC-5-PWA/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/PEC-5-PWA/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/PEC-5-PWA/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/PEC-5-PWA/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/PEC-5-PWA/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/PEC-5-PWA/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/PEC-5-PWA/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/PEC-5-PWA/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/PEC-5-PWA/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/PEC-5-PWA/index.html": "9fc8d2f8e03669050cb30761e5fcd1b33fe85d7b",
+    "/PEC-5-PWA/main.2b91afba0d9b8fb01069.js": "18909f8d89d2d42ecd70b541f21ebc872579c543",
+    "/PEC-5-PWA/manifest.webmanifest": "27395372923710cfb830618de2afc9b6481880db",
+    "/PEC-5-PWA/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/PEC-5-PWA/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/PEC-5-PWA/styles.1bc687f493119ceac132.css": "b0f2b613431ddcd7b3af927545d35ddccf8f6275"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
